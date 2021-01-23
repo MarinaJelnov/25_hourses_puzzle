@@ -34,10 +34,10 @@ def from_five_to_three(list_x):
      list_xx.pop()
      list_xx.pop()
     elif L<3:
-     x = random.choice(list_x)
-     list_xx.append(x)
-     if L==3:
-      pass
+     while L!=3:   
+      x = random.choice(list_x)
+      list_xx.append(x)
+      list_xx = list(set(list_x)) 
     return list_xx
 print('Three the best of the evry group:')
 list111=list(from_five_to_three(first_group_of_horses))
